@@ -1,6 +1,11 @@
 use github
 
+<<<<<<< HEAD
 modify update method to sshddd
 
 modify again after modify on mac 
-for my window macthine the local code is old 
+=======
+modify update method to ssh
+
+update in my mac
+>>>>>>> a674889af5650d80681af64213e0c302efb760b8
