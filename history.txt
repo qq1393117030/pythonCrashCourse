@@ -1,0 +1,252 @@
+ alien_invasion/   ch7/                    python-3.2.5.amd64.msi
+ ch10/             ch8/                    python-3.5.2.exe*
+ ch12/             ch9/                    python-3.6.2.exe*
+ ch18/             ftp/                    python-3.6.4-amd64.exe*
+ ch19/             geany-1.31_setup.exe*  'site-packages - ¿ì½Ý·½Ê½.lnk'*
+ ch2/              get-pip.py*             version1/
+ ch3/              jquery-3.3.1.js
+ ch4/              jquery-3.3.1.min.js
+
+jjhwhh@jjh MINGW64 /e/py
+$ mkdir git
+
+jjhwhh@jjh MINGW64 /e/py
+$ cd git
+
+jjhwhh@jjh MINGW64 /e/py/git
+$ ls
+
+jjhwhh@jjh MINGW64 /e/py/git
+$ mkdir s15_gitpro
+
+jjhwhh@jjh MINGW64 /e/py/git
+$ git init
+Initialized empty Git repository in E:/py/git/.git/
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ ls
+s15_gitpro/
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ cd .git
+
+jjhwhh@jjh MINGW64 /e/py/git/.git (GIT_DIR!)
+$ ls
+config  description  HEAD  hooks/  info/  objects/  refs/
+
+jjhwhh@jjh MINGW64 /e/py/git/.git (GIT_DIR!)
+$ cd ..
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ vim ReadMe.txt
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ mkdir var conf core lib bin
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ ls
+bin/  conf/  core/  lib/  ReadMe.txt  s15_gitpro/  var/
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ vim conf/setting.py
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ clear
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ ls
+bin/  conf/  core/  lib/  ReadMe.txt  s15_gitpro/  var/
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git add Readme.txt
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ReadMe.txt
+        conf/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git add ReadMe.txt
+warning: LF will be replaced by CRLF in ReadMe.txt.
+The file will have its original line endings in your working directory.
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   ReadMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conf/
+
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git commit
+[master (root-commit) 95fe15a] git commit first time
+ 1 file changed, 2 insertions(+)
+ create mode 100644 ReadMe.txt
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conf/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conf/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ vim ReadMe.txt
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   ReadMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conf/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git add .
+warning: LF will be replaced by CRLF in ReadMe.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in conf/setting.py.
+The file will have its original line endings in your working directory.
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   ReadMe.txt
+        new file:   conf/setting.py
+
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git commit -m 'second commit conf readme'
+[master d6c4ce6] second commit conf readme
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 conf/setting.py
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ vim ReadMe.txt
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ vim /conf/settings.py
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ ls
+bin/  conf/  core/  lib/  ReadMe.txt  s15_gitpro/  var/
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git log
+commit d6c4ce60ef4b2c7a39ffbeca31f82d13f2cbb652 (HEAD -> master)
+Author: qq1393117030 <qq1393117030@users.noreply.github.com>
+Date:   Sun Oct 14 22:13:47 2018 +0800
+
+    second commit conf readme
+
+commit 95fe15af87d92dc5b09b6f2edd7da7bb50b1cfa7
+Author: qq1393117030 <qq1393117030@users.noreply.github.com>
+Date:   Sun Oct 14 22:05:08 2018 +0800
+
+    git commit first time
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git add .
+warning: LF will be replaced by CRLF in ReadMe.txt.
+The file will have its original line endings in your working directory.
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git commit -m 'third commit'
+[master 6e05714] third commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git log
+commit 6e0571452a3c367a363406ef3617427fd825bcb5 (HEAD -> master)
+Author: qq1393117030 <qq1393117030@users.noreply.github.com>
+Date:   Sun Oct 14 22:21:27 2018 +0800
+
+    third commit
+
+commit d6c4ce60ef4b2c7a39ffbeca31f82d13f2cbb652
+Author: qq1393117030 <qq1393117030@users.noreply.github.com>
+Date:   Sun Oct 14 22:13:47 2018 +0800
+
+    second commit conf readme
+
+commit 95fe15af87d92dc5b09b6f2edd7da7bb50b1cfa7
+Author: qq1393117030 <qq1393117030@users.noreply.github.com>
+Date:   Sun Oct 14 22:05:08 2018 +0800
+
+    git commit first time
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$ git reset --hard HEAD^
+HEAD is now at d6c4ce6 second commit conf readme
+
+jjhwhh@jjh MINGW64 /e/py/git (master)
+$
