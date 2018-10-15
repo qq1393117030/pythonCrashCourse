@@ -1,8 +1,14 @@
 use github
 
+<<<<<<< HEAD
+modify update method to sshddd
+
+modify again after modify on mac 
+=======
 modify update method to ssh
 
 update in my mac
+<<<<<<< HEAD
 update in mac on master branch
 next i will merge my windows modify
 
@@ -14,3 +20,6 @@ note :
 
 
 
+=======
+>>>>>>> a674889af5650d80681af64213e0c302efb760b8
+>>>>>>> c9b97095fca0cd5aba135c1e595a9789526a7004
