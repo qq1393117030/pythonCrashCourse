@@ -3,3 +3,14 @@ use github
 modify update method to ssh
 
 update in my mac
+update in mac on master branch
+next i will merge my windows modify
+
+note :
+1. git checkout -b dev # create branch dev and switch on it 
+2. git checkout master # switch back to master
+3. git pull 		# pull the latest code on master
+4. git merge dev 	# merge dev on master
+
+
+
